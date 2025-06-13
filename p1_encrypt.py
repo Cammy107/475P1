@@ -44,4 +44,5 @@ def hide_text_in_image(image_path, output_path, secret_text):
 
 
 if __name__ == "__main__":
-    hide_text_in_image("input.png", "output.png", "hello world")
+    secret_text = """hello world"""
+    hide_text_in_image("input.png", "output.png", secret_text)
