@@ -12,7 +12,7 @@ def extract_lsb_image_all_channels(image_path, Name):
         lsb_array = img_array[:, :, i] & 1
         lsb_image = (lsb_array * 255).astype(np.uint8)
         lsb_img = Image.fromarray(lsb_image)
-        lsb_img.save(f"vis_atk_{Name}.png")
+        lsb_img.save(f"{Name}.png")
         lsb_img.show()
         print(f"done")
         lsb_images.append(lsb_img)
